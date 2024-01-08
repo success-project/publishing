@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    @@include('../htmlPartials/_head.html', {
+        "headTitle": "로그인"
+    })
+</head>
+
+
+<body>
+	<div class="login_container">
+        <div class="login_area">
+            <div class="login_wrap">
+                <div class="login_input_area">
+                    <div class="login_input_wrap">
+                        <div class="login_title">
+                            <a class="logo_link" href="/">
+                                <img src="img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="login_subtitle">
+                            Application Management System
+                        </div>
+                        <div class="login_form_group">
+                            <div class="login_form">
+                                <!-- error class toggle -->
+                                <label class="login_input_label" for="login_input_01">ID</label>
+                                <input class="login_input" type="text" id="login_input_01" placeholder="아이디를 입력하세요">
+                                <!-- <p class="error">존재하지 않는 사용자 아이디입니다.<br>입력한 정보가 맞는지 다시 한번 확인해 주세요.</p> -->
+                            </div>
+                            <div class="login_form">
+                                <label class="login_input_label" for="login_input_02">Password</label>
+                                <input class="login_input" type="password" id="login_input_02" placeholder="비밀번호를 입력하세요">
+                            </div>
+                            <div class="login_switch_area">
+                                <input id="s1" type="checkbox" class="switch">
+                                <label for="s1">아이디 저장</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary login_submit_btn">로그인</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="login_bg_area">
+                    <div class="login_bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
