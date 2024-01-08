@@ -61,10 +61,33 @@
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32L19.513 8.2z"></path></svg>
 					<span>작성하기</span>
 				</button>
-				<button class="top_action_btn">
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="20" height="20" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25"></path></svg>
-					<span>최신순</span>
-				</button>
+				<div class="dropdown">
+					<button class="top_action_btn dropdown_btn">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="20" height="20" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25"></path></svg>
+						<span>최신순</span>
+					</button>
+					<div class="dropdown_box">
+						<ul class="dropdown_list">
+							<li class="dropdown_item">
+								<button class="dropdown_btn active">
+									최신순
+								</button>
+								<button class="dropdown_btn">
+									추천순
+								</button>
+								<button class="dropdown_btn">
+									댓글순
+								</button>
+								<button class="dropdown_btn">
+									스크랩순
+								</button>
+								<button class="dropdown_btn">
+									조회순
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="list_area">
