@@ -968,6 +968,187 @@ main {
             }
         }
     }
+
+    .view_area {
+        border-top: 1px solid $border-color;
+        padding-top: 36px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 840px;
+
+        .view_header {
+            margin-bottom: 36px;
+            display: flex;
+        }
+
+        .view_info_wrap {
+            display: flex;
+            flex-direction: column;
+
+            .name {
+                font-size: 16px;
+            }
+        }
+
+        .view_info_box {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+            column-gap: 4px;
+
+            > div {
+                display: inline-flex;
+                align-items: center;
+                color: #374151;
+                column-gap: 4px;
+
+                & + div {
+                    &::before {
+                        content: "·";
+                    }
+                }
+
+                > span {
+                    display: inline-flex;
+                    align-items: center;
+                    column-gap: 2px;
+                }
+            }
+        }
+
+        .view_action_wrap {
+            flex: none;
+            display: flex;
+            column-gap: 10px;
+            margin-left: auto;
+
+            .view_action_btn {
+                padding: 8px 16px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                border-radius: 6px;
+                background-color: #fff;
+                border: 1px solid rgba(107, 114, 128, 0.3);
+                box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+                color: #374151;
+                line-height: 20px;
+                font-weight: 500;
+                font-size: 14px;
+                column-gap: 4px;
+                height: 36px;
+
+                &:hover {
+                    border-color: rgba(107, 114, 128, 0.7);
+                }
+
+                &.primary {
+                    background-color: $primary;
+                    border-color: transparent;
+                    color: #fff;
+                    box-shadow: none;
+                    column-gap: 4px;
+
+                    &:hover {
+                        background-color: #0b7fd3;
+                    }
+                }
+            }
+        }
+
+        .view_title {
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 600;
+        }
+
+        .view_body {
+            margin: 32px 0;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            color: #374151;
+        }
+
+        .view_footer {
+            display: flex;
+            align-items: center;
+
+            .view_hashtag_wrap {
+                display: flex;
+                flex: 1 1 0%;
+                align-items: center;
+                column-gap: 6px;
+            }
+
+            .hashtag_item {
+                border-radius: 999px;
+                padding: 6px 12px;
+                background-color: #f3f4f6;
+                font-size: 14px;
+                font-weight: 400;
+                flex-shrink: 0;
+                color: #374151;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+
+            .like_btn_wrap {
+                display: inline-flex;
+                margin-left: 4px;
+            }
+
+            .like_btn {
+                border: 1px solid rgba(107, 114, 128, 0.3);
+                display: inline-flex;
+                width: 35px;
+                height: 38px;
+                position: relative;
+                background-color: #fff;
+                color: #374151;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    border-color: rgba(107, 114, 128, 0.7);
+                }
+
+                &.dislike {
+                    border-top-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+
+                    &:hover {
+                        color: $error;
+                    }
+                }
+
+                &.like {
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+
+            .likes {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #374151;
+                font-weight: 500;
+                font-size: 16px;
+                border-top: 1px solid rgba(107, 114, 128, 0.3);
+                border-bottom: 1px solid rgba(107, 114, 128, 0.3);
+                width: 55px;
+                height: 38px;
+            }
+        }
+    }
 }
 
 .dropdown {
